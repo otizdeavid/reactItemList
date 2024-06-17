@@ -24,14 +24,20 @@ code {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid blue;
-  /* height: calc(100vh - 2px); */
+  border: 2px solid rgb(8, 8, 233);
+   /* height: calc(100vh - 2px);  */
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: blue;
   width: 100%;
   color: #f5f5f5;
+  position: sticky;
+  z-index: 999;
   
   
 }
@@ -44,15 +50,17 @@ main  {
   width: 100%;
   font-size: 1em;
   font-weight: 600;
-  
-  
 }
 
 footer {
   background-color: blue;
   width: 100%;
   color: #f5f5f5;
-  margin-bottom: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
   font-weight: 500;
 }
 
@@ -88,9 +96,9 @@ ul {
   margin: 0 0.6rem 0 0;
 }
 
-.item input[type="checkbox"]:focus + label {
+/* .item input[type="checkbox"]:focus + label {
   text-decoration:"";
-}
+} */
 
 .item > label {
   font-size: 1.5em;
@@ -110,5 +118,72 @@ ul {
   outline: none;
 }
 
+form {
+  border: none;
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  display: flex;
+}
+
+.addForm label {
+   position: absolute;
+  left: -9999px;
+}
+
+.addForm input[type="text"] {
+  height: 40px;
+  width: 40px;
+  flex: 1;
+  margin-right: 5px;
+  font-size: 1.4em;
+  font-weight: 600;
+  border: 2px solid #222;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  
+  
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  /* border-style: none; */
+  color: mediumblue;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+  color: #f5f5f5;
+  border-style: none;
+}
+
+/* Search section */
+
+.searchForm {
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -9999px;
+}
+
+.searchForm input[type='text']{
+  flex: 1;
+  height: 40px;
+  width:40px;
+  border: 2px solid #222;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
 
 
